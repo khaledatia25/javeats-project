@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "node16",
+    "lib": ["ES2022"],
+    "moduleResolution": "node16",
+    "rootDir": ".",
+    "outDir": "build",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "baseUrl": "./",
+    "sourceMap": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowImportingTsExtensions": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false, 
+    "paths":{
+      "@/*":[
+        "./src/*"
+      ],
+      "@routes/*":[
+        "./src/routes/*"
+      ],
+      "@models/*":[
+        "./src/models/*"
+      ],
+      "@controllers/*":[
+        "./src/controllers/*"
+      ],
+      "@utils/*":[
+        "./src/utils/*"
+      ], 
+      "@services/*":[
+        "./src/services/*"
+      ],
+      "@db/*":[
+        "./src/db/*"
+      ], 
+      "@scripts/*":[
+        "./src/scripts/*"
+      ],
+      "@types/*":[
+        "./src/types/*"
+      ]
+      
+  
+    }
+  },
+  "include": ["src/**/*"], 
+}
