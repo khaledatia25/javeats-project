@@ -1,4 +1,3 @@
-````markdown
 # Restaurant Ordering API
 
 This project is a robust restaurant ordering API built with Node.js, Express, Postgres, and TypeScript.
@@ -51,7 +50,7 @@ This project is a robust restaurant ordering API built with Node.js, Express, Po
    ```bash
    npm install
    ```
-````
+
 
 2. **Database Setup:**
 
