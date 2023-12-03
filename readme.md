@@ -44,27 +44,6 @@ This project is a robust restaurant ordering API built with Node.js, Express, Po
 - TypeScript
 - JSON Web Tokens (JWT)
 
-## Getting Started
-
-1. **Installation:**
-   ```bash
-   npm install
-   ```
-
-
-2. **Database Setup:**
-
-   - Set up your Postgres database and configure the connection in the `.env` file.
-
-3. **Run the Application:**
-
-   ```bash
-   npm start
-   ```
-
-4. **API Documentation:**
-   - Will be added soon.
-
 ## Contributors
 
 - Khaled Waleed
