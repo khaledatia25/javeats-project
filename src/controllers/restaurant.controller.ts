@@ -1,8 +1,8 @@
-import { queryList } from "@/db/quiries.ts";
-import Logger from "@/services/loggerService.ts";
-import { isRestaurantListItem } from "@/types/restaurant.types";
-import { RequestWithUser } from "@/types/user.types";
-import query from "@db/connection.ts";
+import { queryList } from "../db/quiries";
+import Logger from "../services/loggerService";
+import { isRestaurantListItem } from "../types/restaurant.types";
+import { RequestWithUser } from "../types/user.types";
+import query from "../db/connection";
 import { Response, Request } from "express";
 const logger = new Logger("restaurantController");
 
@@ -30,12 +30,10 @@ export const createRrestaurant = async (
     const countOwnerIdQuery = queryList.COUNT_OWNER_ID as string;
     const countQueryResult = await query(countOwnerIdQuery, [user.id]);
     if (countQueryResult.rows[0]) {
-      res
-        .status(500)
-        .send({
-          error:
-            "This owner account already have a restaurant, Only one allowed for each account",
-        });
+      res.status(500).send({
+        error:
+          "This owner account already have a restaurant, Only one allowed for each account",
+      });
       return;
     }
     const createRestaurantQuery = queryList.CREATE_RESTAURANT_QUERY;

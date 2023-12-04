@@ -1,11 +1,11 @@
-import { queryList } from "@/db/quiries.ts";
-import Logger from "@/services/loggerService.ts";
-import { signUpErrorMessage } from "@/utils/errorMessages.ts";
-import { RequestWithUser, isUserProfile } from "@/types/user.types";
-import { comparePassword, hashPassword } from "@/utils/hashing.ts";
-import { generateToken } from "@/utils/jwtUtil";
-import { validateEmail } from "@/utils/validator";
-import query from "@db/connection.ts";
+import { queryList } from "../db/quiries";
+import Logger from "../services/loggerService";
+import { signUpErrorMessage } from "../utils/errorMessages";
+import { RequestWithUser, isUserProfile } from "../types/user.types";
+import { comparePassword, hashPassword } from "../utils/hashing";
+import { generateToken } from "../utils/jwtUtil";
+import { validateEmail } from "../utils/validator";
+import query from "../db/connection";
 import { Request, Response } from "express";
 
 const logger = new Logger("adminController");

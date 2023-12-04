@@ -1,4 +1,4 @@
-import { objectToUpdateStatement } from "@utils/functions";
+import { objectToUpdateStatement } from "../utils/functions";
 export const queryList: { [key: string]: string | ((obj: any) => string) } = {
   CUSTOMER_SIGNUP_QUERY: ` WITH inserted_user AS (
     INSERT INTO APP_USER (FNAME, LNAME, EMAIL, USERNAME, PASSWORD, USER_ROLE, PHONE)

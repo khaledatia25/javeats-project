@@ -1,11 +1,11 @@
 import express from "express";
-import { verifyToken } from "@/utils/jwtUtil";
+import { verifyToken } from "../utils/jwtUtil";
 import {
   addToCart,
   removeFromCart,
   updateCartItem,
   getCartItems,
-} from "@/controllers/cartItem.controller";
+} from "../controllers/cartItem.controller";
 const router = express.Router();
 
 router.post("/cartItems/add", verifyToken("customer"), addToCart);

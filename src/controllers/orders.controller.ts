@@ -1,8 +1,8 @@
-import { queryList } from "@/db/quiries.ts";
-import Logger from "@/services/loggerService.ts";
-import { convertToOrdersObject } from "@/types/order.types";
-import { RequestWithUser } from "@/types/user.types";
-import query from "@db/connection.ts";
+import { queryList } from "../db/quiries";
+import Logger from "../services/loggerService";
+import { convertToOrdersObject } from "../types/order.types";
+import { RequestWithUser } from "../types/user.types";
+import query from "../db/connection";
 import { Response } from "express";
 const logger = new Logger("orderController");
 

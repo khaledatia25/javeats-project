@@ -1,7 +1,7 @@
-import { queryList } from "@/db/quiries.ts";
-import Logger from "@/services/loggerService.ts";
-import { RequestWithUser } from "@/types/user.types";
-import query from "@db/connection.ts";
+import { queryList } from "../db/quiries";
+import Logger from "../services/loggerService";
+import { RequestWithUser } from "../types/user.types";
+import query from "../db/connection";
 import { Response } from "express";
 const logger = new Logger("cartItemController");
 

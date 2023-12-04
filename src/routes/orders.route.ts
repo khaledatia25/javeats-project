@@ -1,11 +1,11 @@
 import express from "express";
-import { verifyToken } from "@/utils/jwtUtil";
+import { verifyToken } from "../utils/jwtUtil";
 import {
   cancelOrder,
   getOrders,
   placeOrder,
   updateOrder,
-} from "@/controllers/orders.controller";
+} from "../controllers/orders.controller";
 const router = express.Router();
 
 router.get("/orders/customer", verifyToken("customer"), getOrders);

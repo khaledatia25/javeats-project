@@ -1,4 +1,4 @@
-import pool from "./pool.ts";
+import pool from "./pool";
 import { QueryResult } from "pg";
 
 const query = (

@@ -1,10 +1,6 @@
 import express, { Router } from "express";
-import {
-  getProfile,
-  logIn,
-  signUp,
-} from "@/controllers/customer.controller.ts";
-import { verifyToken } from "@/utils/jwtUtil";
+import { getProfile, logIn, signUp } from "../controllers/customer.controller";
+import { verifyToken } from "../utils/jwtUtil";
 const router: Router = express.Router();
 
 router.post("/customer/signup", signUp);

@@ -1,11 +1,11 @@
 import express, { Router } from "express";
-import { verifyToken } from "@/utils/jwtUtil";
+import { verifyToken } from "../utils/jwtUtil";
 import {
   listMenus,
   createMenu,
   updateMenu,
   deleteMenu,
-} from "@/controllers/menu.controller";
+} from "../controllers/menu.controller";
 const router: Router = express.Router();
 
 router.post("/menus/add", verifyToken("owner"), createMenu);
